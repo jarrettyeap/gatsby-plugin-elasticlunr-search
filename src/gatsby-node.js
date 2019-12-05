@@ -1,6 +1,7 @@
 const crypto = require(`crypto`)
 const { GraphQLScalarType } = require(`gatsby/graphql`)
 const elasticlunr = require(`elasticlunr`)
+elasticlunr.clearStopWords()
 
 const SEARCH_INDEX_ID = `SearchIndex < Site`
 const SEARCH_INDEX_TYPE = `SiteSearchIndex`
